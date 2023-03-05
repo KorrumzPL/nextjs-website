@@ -1,8 +1,8 @@
 import Link from 'next/link';
+import {nav, SiteLogoContainer, SiteTitleAndDescription} from '../components/layout.js'
+import styles from '../components/layout.module.css';
+import { Navbar, NavLinks, SiteTitle, SiteDescription, SiteLogo } from '../components/layout.js';
 import Head from 'next/head'
-import styles from '../styles/Home.module.css';
-import { Navbar, NavLinks } from '../components/layout.js';
-import { nav } from '../components/layout.js'
 
 export default function Home() {
     return (
@@ -15,12 +15,27 @@ export default function Home() {
             <main>
                 <Navbar>
                     <NavLinks>
-                        <li><p> skyndalex.xyz </p></li>
-                        <li><a href="https://docs.skyndalex.xyz"> Documentation [Soon] </a></li>
-                        <li><a href="https://status.skyndalex.xyz"> Status </a></li>
-                        <li><a href="https://discord.gg/RkUYDx5bhM"> Discord </a></li>
+                        <li> <p> skyndalex.xyz </p> </li>
+                        <li> <a href="https://docs.skyndalex.xyz"> Documentation [Soon] </a> </li>
+                        <li> <a href="https://status.skyndalex.xyz"> Status </a> </li>
+                        <li> <a href="https://dg.skyndalex.xyz"> Datadog </a> </li>
+                        <li> <a href="https://discord.gg/RkUYDx5bhM"> Discord </a> </li>
+                        <li> <a href=""> Command list </a> </li>
                     </NavLinks>
                 </Navbar>
+
+                <div className={styles.container}>
+                    <div className={styles.SiteLogoContainer}>
+                        <SiteLogo> </SiteLogo>
+
+                        <div className={styles.SiteTitleAndDescription}>
+                            <SiteTitle> Skyndalex </SiteTitle>
+                            <SiteDescription>
+                                Build your discord server with Skyndalex. BETA version, so may have issues.
+                            </SiteDescription>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     )

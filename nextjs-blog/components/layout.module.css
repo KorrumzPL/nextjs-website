@@ -3,16 +3,23 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto+Condensed:wght@300&display=swap');
 
 .container {
-    max-width: 36rem;
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
+    min-height: 40vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 .navbar {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
     background-color: #272727;
     font-family: 'Noto Sans';
     text-align: center;
@@ -32,7 +39,6 @@
     text-align: right;
     font-family: 'Noto Sans';
     text-decoration: None;
-    text-align: left;
     font-size: 100%;
 }
 
@@ -52,4 +58,33 @@
     font-family: 'Noto Sans';
     text-align: left;
     font-size: 100%;
+}
+.site_title {
+    font-size: 30px;
+    padding: 10px;
+    font-family: "Noto Sans";
+    color: white;
+}
+
+.site_description {
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Noto Sans";
+    color: grey;
+}
+.site_title_and_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.site_logo_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.site_logo {
+    border-radius: 50%;
+    float: right;
+    margin-right: 10px;
+    vertical-align: middle;
 }
