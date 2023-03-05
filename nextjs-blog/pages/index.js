@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import {nav, SiteLogoContainer, SiteTitleAndDescription} from '../components/layout.js'
 import styles from '../components/layout.module.css';
-import { Navbar, NavLinks, SiteTitle, SiteDescription, SiteLogo } from '../components/layout.js';
+import { Navbar, NavLinks, SiteTitle, SiteDescription, Feature1Logo, SiteLogo } from '../components/layout.js';
 import Head from 'next/head'
 
 export default function Home() {
@@ -23,6 +23,8 @@ export default function Home() {
                         <li> <a href=""> Command list </a> </li>
                     </NavLinks>
                 </Navbar>
+
+                ## Site title
 
                 <div className={styles.container}>
                     <div className={styles.SiteLogoContainer}>
