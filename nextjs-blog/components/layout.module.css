@@ -1,5 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Lexend+Deca:wght@100;500&family=Montserrat:wght@700&family=Noto+Sans:wght@700&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto+Condensed:wght@300&display=swap');
+
 .container {
     max-width: 36rem;
     padding: 0 1rem;
     margin: 3rem auto 6rem;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background-color: #272727;
+    font-family: 'Noto Sans';
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+.navbar-list {
+    text-decoration: None;
+    text-align: center;
+}
+
+.nav_links li {
+    color: lightgreen;
+    display: inline-block;
+    padding: 0px 10px;
+    text-align: right;
+    font-family: 'Noto Sans';
+    text-decoration: None;
+    text-align: left;
+    font-size: 100%;
+}
+
+.nav_links li a {
+    color: white;
+    text-decoration: None;
+    transition: all 0.3s ease 0s;
+    font-family: 'Noto Sans';
+    text-align: left;
+    font-size: 100%;
+}
+
+.nav_links li a:hover {
+    text-decoration: None;
+    transition: all 0.3s ease 0s;
+    color: #2bedac;
+    font-family: 'Noto Sans';
+    text-align: left;
+    font-size: 100%;
 }
