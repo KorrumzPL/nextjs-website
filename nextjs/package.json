@@ -6,8 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "buffer": "^6.0.3",
+    "graceful-fs": "^4.2.10",
     "next": "latest",
+    "node-fetch": "^3.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "stream-browserify": "^3.0.0",
+    "url": "^0.11.0"
   }
 }
