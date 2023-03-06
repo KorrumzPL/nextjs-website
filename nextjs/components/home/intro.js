@@ -23,6 +23,7 @@ export function SiteLogo() {
             className={styles.site_logo}
             src="https://cdn.discordapp.com/avatars/1059594156839809074/f2ed3c7590d834ed2d86912124c4ee1e.webp"
             alt="Skyndalex"
+            width="200"
         />
     );
 }

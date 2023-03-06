@@ -18,7 +18,7 @@
     display: table;
 }
 .about_us_title {
-    font-size: 30px;
+    font-size: 40px;
     padding: 10px;
     font-family: "Noto Sans";
     color: white;
@@ -26,22 +26,23 @@
 .grid-container {
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-gap: 20px;
     justify-items: center;
 }
 
 .grid-item {
-    font-family: "Noto Sans";
     align-items: center;
     padding: 20px;
     text-align: center;
 }
 .grid_item_title {
-    font-size: 20px;
+    font-size: 30px;
+    font-family: "Noto Sans";
     color: white;
 }
 .grid_item_description {
-    font-size: 15px;
+    font-size: 20px;
+    font-family: "Noto Sans";
     color: grey;
 }
