@@ -2,14 +2,15 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '../styles/home/page.module.css'
 import styles2 from '../styles/about/about.module.css'
+import styles3 from '../styles/features/features.module.css'
 import Head from 'next/head'
 const inter = Inter({ subsets: ['latin'] })
 import { Navbar, NavLinks } from './navbar/navbar';
 import { SiteLogo, SiteTitle, SiteDescription } from './home/home';
 import { AboutUsGrid, AboutUsTitle, GridItemTitle, GridItemDescription } from './about/about';
-
+import { FeaturesGrid, FeatureTitle, FeatureGridItemTitle, FeatureGridItemDescription, FeatureLogo } from './features/features';
 export default function Home() {
-  return (
+    return (
     <main className={styles.main}>
         <Head>
             <title> Skyndalex </title>
@@ -57,6 +58,42 @@ export default function Home() {
                     <GridItemDescription> We're working on making the bot 24/7, pretty much! It is possible to put the bot on your own server </GridItemDescription>
                 </div>
             </AboutUsGrid>
+        </div>
+
+        <div className={styles3.container}>
+            <FeatureTitle> Features </FeatureTitle>
+            <FeaturesGrid>
+                    <div className={styles3['grid-item']}>
+
+                        <FeatureGridItemTitle> Embed builders </FeatureGridItemTitle>
+
+                        <div className={styles3['grid-item-content']}>
+                            <div className={styles3['grid-item-description']}>
+                                <FeatureGridItemDescription>
+                                    With embed builders you are able to create beautiful and more readable ads with a simple configurator for buttons
+                                </FeatureGridItemDescription>
+                            </div>
+                            <FeatureLogo
+                                src="https://cdn.discordapp.com/attachments/1059063991336439809/1082404556446629988/image.png"
+                                alt="Sususususususususususuus"
+                            />
+                        </div>
+                    </div>
+                    <div className={styles3['grid-item']}>
+                        <FeatureGridItemTitle> Other item </FeatureGridItemTitle>
+                        <div className={styles3['grid-item-content']}>
+                            <div className={styles3['grid-item-description']}>
+                                <FeatureGridItemDescription>
+                                    Just other item!
+                                </FeatureGridItemDescription>
+                            </div>
+                            <FeatureLogo
+                                src="https://cdn.discordapp.com/attachments/1059063991336439809/1082404556446629988/image.png"
+                                alt="Sususususususususususuus"
+                            />
+                    </div>
+                </div>
+            </FeaturesGrid>
         </div>
     </main>
   )
