@@ -1,23 +1,25 @@
-import styles from './intro.module.css';
+import React, { ReactNode } from 'react';
+import styles from "../../styles/home/page.module.css";
 
-export function Layout({ children }) {
-    return <div className={styles.container}>{children}</div>;
-};
-export function SiteTitle({ children }) {
+interface NavProps {
+    children: ReactNode;
+}
+
+export function SiteTitle ({ children }: NavProps) {
     return <div className={styles.site_title}>{children}</div>;
 }
-export function SiteDescription({ children }) {
+export function SiteDescription ({ children }: NavProps) {
     return <p className={styles.site_description}>{children}</p>;
 }
-export function SiteTitleAndDescription() {
+export function SiteTitleAndDescription ({ children }: NavProps) {
     return (
         <div className={styles.site_title_and_description}>
-            <SiteTitle />
-            <SiteDescription />
+            <SiteTitle>{children}</SiteTitle>
+            <SiteDescription>{children}</SiteDescription>
         </div>
     );
 }
-export function SiteLogo() {
+export function SiteLogo () {
     return (
         <img
             className={styles.site_logo}
