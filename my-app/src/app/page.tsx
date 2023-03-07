@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 import styles from '../styles/home/page.module.css'
 import styles2 from '../styles/about/about.module.css'
 import styles3 from '../styles/features/features.module.css'
@@ -10,6 +11,7 @@ import { SiteLogo, SiteTitle, SiteDescription } from './home/home';
 import { AboutUsGrid, AboutUsTitle, GridItemTitle, GridItemDescription } from './about/about';
 import { FeaturesGrid, FeatureTitle, FeatureGridItemTitle, FeatureGridItemDescription, FeatureLogo } from './features/features';
 export default function Home() {
+    // @ts-ignore
     return (
     <main className={styles.main}>
         <Head>
@@ -24,7 +26,7 @@ export default function Home() {
                 <li> <a href="https://status.skyndalex.xyz"> Status </a> </li>
                 <li> <a href="https://dg.skyndalex.xyz"> Datadog </a> </li>
                 <li> <a href="https://discord.gg/RkUYDx5bhM"> Discord </a> </li>
-                <li> <a href=""> Command list </a> </li>
+                <li> <Link href="http://localhost:3000/commands"> Command list </Link> </li>
             </NavLinks>
         </Navbar>
 
@@ -59,6 +61,7 @@ export default function Home() {
                 </div>
             </AboutUsGrid>
         </div>
+
 
         <div className={styles3.container}>
             <FeatureTitle> Features </FeatureTitle>
