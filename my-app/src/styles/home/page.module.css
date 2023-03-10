@@ -27,7 +27,7 @@
 .site_stats {
     font-size: 25px;
     padding: 10px;
-    font-family: "ABC Ginto Normal Trial";
+    font-family: "Whitney";
     color: white;
     display: flex;
     justify-content: space-between;
@@ -48,7 +48,7 @@
 .site_description {
     font-size: 30px;
     padding: 10px;
-    font-family: "GG Sans";
+    font-family: "Whitney";
     color: grey;
 }
 .site_title_and_description {

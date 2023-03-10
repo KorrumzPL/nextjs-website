@@ -26,7 +26,6 @@ export default async function Home() {
         }
 
         const botInfo = await res.json() || 0;
-        console.log(botInfo)
 
         return (
             <main className={styles.main}>
@@ -104,7 +103,7 @@ export default async function Home() {
                                     </FeatureGridItemDescription>
                                 </div>
 
-                                <FeatureLogo src={embedBuilderFeatureLogo}/>
+                                <FeatureLogo src={embedBuilderFeatureLogo} alt={"Feature"} />
                             </div>
                         </div>
                         <div className={styles3['grid-item']}>
@@ -117,7 +116,7 @@ export default async function Home() {
                                     </FeatureGridItemDescription>
                                 </div>
 
-                                <FeatureLogo src={ghManagerFeatureLogo}/>
+                                <FeatureLogo src={ghManagerFeatureLogo} alt={"Feature"}/>
                             </div>
                         </div>
                         <div className={styles3['grid-item']}>
@@ -129,7 +128,7 @@ export default async function Home() {
                                     </FeatureGridItemDescription>
                                 </div>
 
-                                <FeatureLogo src={customBotsFeatureLogo}/>
+                                <FeatureLogo src={customBotsFeatureLogo} alt={"Feature"} />
                             </div>
                         </div>
                     </FeaturesGrid>

@@ -36,7 +36,7 @@
 }
 .grid_item_title {
     text-align: justify;
-    font-size: 30px;
+    font-size: 33px;
     font-family: "ABC Ginto Normal Trial";
     color: white;
     margin-right: 20px;
@@ -51,7 +51,7 @@
     display: flex;
     height: auto;
     font-size: 25px;
-    font-family: "Whitney Semibold";
+    font-family: "Noto Sans";
     color: grey;
     flex: 1;
     margin-right: 300px;
