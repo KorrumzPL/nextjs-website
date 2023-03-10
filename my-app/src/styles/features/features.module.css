@@ -16,7 +16,7 @@
 .features_title {
     font-size: 40px;
     padding: 10px;
-    font-family: "Noto Sans";
+    font-family: "ABC Ginto Normal Trial";
     color: white;
     margin-top: 80px
 }
@@ -37,7 +37,7 @@
 .grid_item_title {
     text-align: justify;
     font-size: 30px;
-    font-family: "Calibri";
+    font-family: "ABC Ginto Normal Trial";
     color: white;
     margin-right: 20px;
 }
@@ -51,7 +51,7 @@
     display: flex;
     height: auto;
     font-size: 25px;
-    font-family: "Calibri light";
+    font-family: "Whitney Semibold";
     color: grey;
     flex: 1;
     margin-right: 300px;
@@ -69,7 +69,6 @@
 }
 .feature_logo {
     border-radius: 10px;
-    filter: drop-shadow(30px 30px 20px #1f1e1e);
     justify-content: right;
     float: right;
     margin-right: 20px;

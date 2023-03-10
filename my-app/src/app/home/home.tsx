@@ -36,3 +36,14 @@ export function SiteLogoContainer() {
         </div>
     );
 }
+
+export function SiteStats({ children }: NavProps) {
+    return <div className={styles.site_stats}>{children}</div>;
+}
+
+export function SiteStatsItem({ children }: NavProps) {
+    return <div className={`${styles.site_stats_item} ${styles.inline}`}>{children}</div>;
+}
+export function FetchFailed({ children }: NavProps) {
+    return <div className={styles.fetch_failed}>{children}</div>;
+}

@@ -23,7 +23,7 @@
     font-size: 40px;
     margin-top: 50px;
     padding: 10px;
-    font-family: "Noto Sans";
+    font-family: "ABC Ginto Normal Trial";
     color: white;
 }
 .grid-container {
@@ -42,11 +42,11 @@
 }
 .grid_item_title {
     font-size: 30px;
-    font-family: "Calibri";
+    font-family: "Whitney";
     color: white;
 }
 .grid_item_description {
     font-size: 25px;
-    font-family: "Calibri light";
+    font-family: "GG Sans";
     color: grey;
 }

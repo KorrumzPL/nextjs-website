@@ -20,7 +20,7 @@
     display: inline-block;
     padding: 0px 10px;
     text-align: right;
-    font-family: 'Noto Sans';
+    font-family: 'GG Sans';
     text-decoration: None;
     font-size: 100%;
 }
@@ -29,7 +29,7 @@
     color: white;
     text-decoration: None;
     transition: all 0.3s ease 0s;
-    font-family: 'Noto Sans';
+    font-family: 'Whitney';
     text-align: left;
     font-size: 100%;
 }
@@ -38,7 +38,7 @@
     text-decoration: None;
     transition: all 0.3s ease 0s;
     color: #2bedac;
-    font-family: 'Noto Sans';
+    font-family: 'GG Sans';
     text-align: left;
     font-size: 100%;
 }

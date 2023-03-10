@@ -38,8 +38,8 @@ export function FeatureLogo({ src, alt }: NavProps) {
                 className={styles3.feature_logo}
                 src={src}
                 alt={alt}
-                width={'500'}
-                height={'200'}
+                width={500}
+                height={200}
             />
         </div>
     );
