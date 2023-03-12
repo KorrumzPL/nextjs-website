@@ -29,10 +29,10 @@ export default async function Home() {
 
         return (
             <main className={styles.main}>
-                <Head>
+                <head>
                     <title> Skyndalex </title>
                     <link rel="icon" href="https://cdn.discordapp.com/avatars/1059594156839809074/f2ed3c7590d834ed2d86912124c4ee1e.png?size=128" />
-                </Head>
+                </head>
 
                 <Navbar>
                     <NavLinks>
