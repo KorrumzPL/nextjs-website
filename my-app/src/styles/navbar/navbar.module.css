@@ -23,6 +23,7 @@
   font-family: "GG Sans";
   text-decoration: None;
   font-size: 20px;
+  transition: all 0.3s ease 0s;
 }
 
 .nav_links li a {
@@ -34,6 +35,7 @@
   font-size: 100%;
 }
 
+
 .nav_links li a:hover {
   text-decoration: None;
   transition: all 0.3s ease 0s;
@@ -41,4 +43,27 @@
   font-family: "GG Sans";
   text-align: left;
   font-size: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nav_links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nav_links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nav_links li {
+    display: block;
+  }
+  .nav_links li:hover {
+    background-color: #2bedac;
+  }
+  .nav_links li:last-child {
+    border-bottom: none;
+  }
 }

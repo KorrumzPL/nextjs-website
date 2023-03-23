@@ -73,3 +73,37 @@
   margin-right: 20px;
   vertical-align: middle;
 }
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .features_title {
+    font-size: 35px;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .grid-item {
+    padding: 0.5rem;
+  }
+  .grid_item_title {
+    font-size: 30px;
+  }
+  .grid-item-content {
+    flex-direction: column;
+  }
+  .grid-item-description {
+    width: 100%;
+    margin-right: 0;
+  }
+  .feature_logo_container {
+    margin-right: 0;
+  }
+  .feature_logo {
+    margin-right: 0;
+    float: none;
+  }
+}
