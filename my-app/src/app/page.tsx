@@ -33,14 +33,23 @@ import embedBuilderFeatureLogo from "../public/embed_builder_feature.svg";
 import customBotsFeatureLogo from "../public/custom_bot_feature.svg";
 import fetch from "node-fetch";
 
+interface BotInfo {
+  channels: number;
+  guilds: number;
+  ping: number;
+  users: number;
+}
+
 export default async function Home() {
   // @ts-ignore
 
   try {
     const res = await fetch("https://api.skyndalex.xyz/v1/bot/info");
 
-    const botInfo = (await res.json()) || 0;
+    const data = await res.json() as BotInfo;
+    const { channels, guilds, ping, users } = data;
 
+    // @ts-ignore
     return (
       <main className={styles.main}>
         <head>
@@ -101,13 +110,13 @@ export default async function Home() {
 
           <SiteStats>
             We are currently serving
-            <SiteStatsItem>{botInfo.guilds} &nbsp;</SiteStatsItem>
+            <SiteStatsItem>{guilds} &nbsp;</SiteStatsItem>
             guilds,
-            <SiteStatsItem>{botInfo.users} &nbsp;</SiteStatsItem>
+            <SiteStatsItem>{users} &nbsp;</SiteStatsItem>
             users,
-            <SiteStatsItem>{botInfo.channels} &nbsp;</SiteStatsItem>
+            <SiteStatsItem>{channels} &nbsp;</SiteStatsItem>
             channels with ping
-            <SiteStatsItem>{botInfo.ping}ms &nbsp;</SiteStatsItem>
+            <SiteStatsItem>{ping}ms &nbsp;</SiteStatsItem>
           </SiteStats>
         </div>
 

@@ -11,8 +11,6 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #1f201f;
-  filter: drop-shadow(30px 30px 20px #1f1e1e);
 }
 .container::after {
   content: "";
