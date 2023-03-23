@@ -8,13 +8,13 @@ body {
 
 @font-face {
   font-family: "ABC Ginto Normal Trial";
-  src: url('../public/fonts/ABCGintoNormal-Black-Trial.woff');
+  src: url("../public/fonts/ABCGintoNormal-Black-Trial.woff");
 }
 @font-face {
   font-family: "Whitney";
-  src: url('../public/fonts/whitneysemibold.otf');
+  src: url("../public/fonts/whitneysemibold.otf");
 }
 @font-face {
   font-family: "GG Sans";
-  src: url('../public/fonts/ggsans-Normal.ttf');
+  src: url("../public/fonts/ggsans-Normal.ttf");
 }

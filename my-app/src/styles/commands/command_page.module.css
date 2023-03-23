@@ -1,72 +1,72 @@
 .container {
-    min-height: 40vh;
-    padding: 0 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+  min-height: 40vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 .site_title {
-    font-family: "Noto Sans";
-    color: white;
-    font-size: 36px;
-    text-align: center;
+  font-family: "Noto Sans";
+  color: white;
+  font-size: 36px;
+  text-align: center;
 }
 
 .commands_list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .command_item {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .command_name {
-    font-family: Calibri;
-    color: white;
-    font-size: 34px;
+  font-family: Calibri;
+  color: white;
+  font-size: 34px;
 }
 
 .command_description {
-    font-family: Calibri;
-    color: grey;
-    margin-top: 0;
-    font-size: 25px;
+  font-family: Calibri;
+  color: grey;
+  margin-top: 0;
+  font-size: 25px;
 }
 
 .options_list {
-    color: lightslategrey;
-    font-family: "Noto Sans";
-    list-style-type: none;
-    margin-top: 20px;
-    padding: 0;
+  color: lightslategrey;
+  font-family: "Noto Sans";
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0;
 }
 
 .option_item {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .option_name {
-    color: antiquewhite;
-    font-weight: bold;
-    text-decoration: underline;
+  color: antiquewhite;
+  font-weight: bold;
+  text-decoration: underline;
 }
 .option_description {
-    text-decoration: none;
-    margin-top: 5px;
-    margin-bottom: 0;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 .command_options_title {
-    font-family: "Noto Sans";
-    color: white;
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 0;
+  font-family: "Noto Sans";
+  color: white;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
