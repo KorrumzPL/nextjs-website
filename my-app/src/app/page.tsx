@@ -177,6 +177,8 @@ export default async function Home() {
                   </FeatureGridItemDescription>
                 </div>
 
+                // Fix problem with src
+
                 <FeatureLogo src={ghManagerFeatureLogo} alt={"Feature"} />
               </div>
             </div>

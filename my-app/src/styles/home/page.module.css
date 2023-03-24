@@ -13,26 +13,6 @@
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
-@media only screen and (max-width: 420px) {
-  .ml-15 {
-    margin-left: 1rem;
-  }
-  .mr-15 {
-    margin-right: 1rem;
-  }
-  .link {
-    display: none;
-  }
-  .login {
-    display: flex;
-  }
-  .buttons {
-    flex-direction: column;
-  }
-  .invite {
-    margin-bottom: 1rem;
-  }
-}
 .container::after {
   content: "";
   clear: both;
@@ -86,4 +66,35 @@
   float: right;
   margin-right: 10px;
   vertical-align: middle;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    min-height: auto;
+    padding: 0;
+  }
+  .site_title {
+    font-size: 30px;
+  }
+  .site_stats {
+    font-size: 20px;
+    justify-content: center;
+  }
+  .site_stats_item {
+    margin-left: 0;
+  }
+  .site_description {
+    font-size: 25px;
+  }
+  .site_title_and_description {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .site_logo_container {
+    justify-content: center;
+  }
+  .site_logo {
+    float: none;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
