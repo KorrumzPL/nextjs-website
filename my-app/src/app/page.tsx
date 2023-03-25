@@ -14,6 +14,8 @@ import {
   SiteStats,
   SiteStatsItem,
   FetchFailed,
+  HeroButton,
+    LoginButton,
 } from "./home/home";
 import {
   AboutUsGrid,
@@ -93,6 +95,9 @@ export default async function Home() {
               </Link>{" "}
             </li>
           </NavLinks>
+          <LoginButton>
+            Login
+          </LoginButton>
         </Navbar>
 
         <div className={styles.container}>
@@ -105,9 +110,15 @@ export default async function Home() {
                 Build your discord server with Skyndalex. BETA version, so may
                 have issues.
               </SiteDescription>
+
+              <center>
+                <HeroButton> Add bot </HeroButton>
+                <HeroButton> Support </HeroButton>
+              </center>
             </div>
           </div>
 
+          &nbsp;
           <SiteStats>
             We are currently serving
             <SiteStatsItem>{guilds} &nbsp;</SiteStatsItem>

@@ -51,3 +51,12 @@ export function SiteStatsItem({ children }: NavProps) {
 export function FetchFailed({ children }: NavProps) {
   return <div className={styles.fetch_failed}>{children}</div>;
 }
+
+export function HeroButton({ children }: NavProps) {
+  return <button className={styles.hero_button}
+    type="submit">{children}</button>;
+}
+export function LoginButton({ children }: NavProps) {
+  return <button className={styles.login_button}
+    type="submit">{children}</button>;
+}
