@@ -73,6 +73,9 @@
   margin-right: 20px;
   vertical-align: middle;
 }
+/* responsive */
+
+
 @media only screen and (max-width: 1200px) {
   .container {
     display: flex;

@@ -67,6 +67,8 @@
   margin-right: 10px;
   vertical-align: middle;
 }
+/* responsive */
+
 @media only screen and (max-width: 768px) {
   .container {
     min-height: auto;
