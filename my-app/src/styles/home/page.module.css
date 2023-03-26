@@ -8,18 +8,22 @@
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+  animation: fadeIn 1s ease-in-out forwards;
 }
+
 .container::after {
   content: "";
   clear: both;
   display: table;
 }
+
 .site_title {
   font-size: 40px;
   padding: 10px;
   font-family: "Whitney";
   color: white;
 }
+
 .site_stats {
   font-size: 25px;
   padding: 10px;
@@ -33,7 +37,21 @@
 .site_stats_item {
   color: #738adb;
   margin-left: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .fetch_failed {
   color: red;
   text-align: center;
@@ -41,28 +59,33 @@
   font-family: "ABC Ginto Normal Trial";
   margin-top: 400px;
 }
+
 .site_description {
   font-size: 30px;
   padding: 10px;
   font-family: "GG Sans";
   color: grey;
 }
+
 .site_title_and_description {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .site_logo_container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
 .site_logo {
   border-radius: 50%;
   float: right;
   margin-right: 10px;
   vertical-align: middle;
 }
+
 .hero_button {
   background-color: #2196F3;
   border: none;
@@ -97,6 +120,7 @@
   font-family: "ABC Ginto Normal Trial";
   margin-right: 120px;
 }
+
 @media only screen and (max-width: 768px) {
   .container {
     min-height: auto;
