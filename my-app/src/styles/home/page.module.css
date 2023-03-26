@@ -85,7 +85,6 @@
   margin-right: 10px;
   vertical-align: middle;
 }
-
 .hero_button {
   background-color: #2196F3;
   border: none;
@@ -120,6 +119,7 @@
   font-family: "ABC Ginto Normal Trial";
   margin-right: 120px;
 }
+/* responsive */
 
 @media only screen and (max-width: 768px) {
   .container {
@@ -146,7 +146,7 @@
   .site_logo_container {
     justify-content: center;
   }
-  .site_logo {
+  .site_logo {https://github.com/SkyndalexProjects/nextjs-website/pull/2/conflict?name=my-app%252Fsrc%252Fstyles%252Fhome%252Fpage.module.css&ancestor_oid=9f752275c2267ea698d2aa966368c4f31bde1c4f&base_oid=220adda2ea9c666526f5024b627cad46ea6841ba&head_oid=1b8636bb069d2002de855c113e458667cc023cf4
     float: none;
     margin-left: 10px;
     margin-right: 10px;
